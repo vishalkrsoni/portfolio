@@ -192,7 +192,6 @@ img {
     transition: 0.3s;
   }
 }
-
 .nav_list {
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
