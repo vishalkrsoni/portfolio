@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React from "react";
 import "./Footer.css";
 
@@ -6,7 +7,7 @@ export default function footer() {
     <div className="footer-container">
       <div className="footer-parent">
         <img
-          src={require("../../../assets/Home/shape-bg.png").default}
+          src={require("../../../assets/Home/shape-bg.png")}
           alt="you have problem with the image"
         />
       </div>
