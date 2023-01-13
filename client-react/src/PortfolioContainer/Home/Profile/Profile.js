@@ -1,7 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
-import AnimatedText from 'react-animated-text-content';
+import AnimatedText from "react-animated-text-content";
 
 const Profile = () => {
   return (
@@ -21,11 +21,9 @@ const Profile = () => {
               </a>
               <a href="https://github.com/vishalkrsoni">
                 <i className="fa fa-github"></i>
-                
               </a>
               <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
-                <i className="fa fa-linkedin"></i>
-                {/* <i className="uil uil-linkedin"></i> */}
+                <i className="fa fa-linkedin-square"></i>
               </a>
             </div>
           </div>
@@ -46,9 +44,9 @@ const Profile = () => {
                   loop={Infinity}
                   wrapper="b"
                   steps={[
-                    "Full Stack  Dev💻",
+                    "Full Stack  Dev 💻",
                     1500,
-                    "Front End Dev 🖼️",
+                    "Front End Dev 🧮",
                     1500,
                     "Back End Dev 🗄️",
                     1500,
@@ -56,34 +54,28 @@ const Profile = () => {
                     1500,
                   ]}
                 />
+              </h1>{" "}
+              <h1>
+                {" "}
+                <AnimatedText
+                  type="char" // animate words or chars
+                  animation={{
+                    x: "40px",
+                    y: "-20px",
+                    scale: 1.4,
+                    ease: "ease-in-out",
+                  }}
+                  animationType="float"
+                  interval={0.09}
+                  duration={0.8}
+                  tag="p"
+                  className="animated-paragraph"
+                  includeWhiteSpaces
+                  threshold={0.9}
+                  rootMargin="60%">
+                  Front end dev
+                </AnimatedText>
               </h1>
-
-
-<h1>
-{" "}
-  <AnimatedText
-  type="words" // animate words or chars
-  animation={{
-    x: '200px',
-    y: '-20px',
-    scale: 1.1,
-    ease: 'ease-in-out',
-  }}
-  animationType="float"
-  interval={0.06}
-  duration={0.8}
-  tag="p"
-  className="animated-paragraph"
-  includeWhiteSpaces
-  threshold={0.1}
-  rootMargin="20%"
->
-  Content to animate goes here
-</AnimatedText>;
-</h1>
-
-
-
               <span className="profile-role-tagline">
                 Building applications in Front-End and Back-End
               </span>

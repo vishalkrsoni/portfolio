@@ -5,7 +5,6 @@
   justify-content: center;
   height: 10%;
   min-height: fit-content;
-  background-image: url(../../../assets/Home/portfolio2.jpg);
 }
 .profile-parent {
   display: flex;
@@ -73,11 +72,15 @@
   transition: 1s ease-out;
 }
 .colz .colz-icon i {
-  color: rgb(187, 187, 241);
+  /* color: rgba(225, 100, 16, 0.476); */
+  /* color: rgb(129 226 120 / 88%); */
+  /* color: rgb(69 224 55 / 94%); */
+  color: rgb(88 249 245 / 97%);
   padding: 14px;
   padding-left: 0;
   font-size: 26px;
 }
+
 .colz .colz-icon i:hover {
   transform: scale(1.4);
 }
@@ -109,7 +112,6 @@
     width: 320px;
   }
 }
-
 
 @media only screen and (max-width: 810px) {
   .profile-picture {
@@ -145,4 +147,3 @@
     width: 95%;
   }
 }
-
