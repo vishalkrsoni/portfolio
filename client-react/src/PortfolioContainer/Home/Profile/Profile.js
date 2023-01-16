@@ -1,7 +1,7 @@
 import React from "react";
 import Typical from "react-typical";
 import "./Profile.css";
-import AnimatedText from "react-animated-text-content";
+// import AnimatedText from "react-animated-text-content";
 
 const Profile = () => {
   return (
@@ -55,7 +55,7 @@ const Profile = () => {
                   ]}
                 />
               </h1>{" "}
-              <h1>
+              {/* <h1>
                 {" "}
                 <AnimatedText
                   type="char" // animate words or chars
@@ -75,7 +75,7 @@ const Profile = () => {
                   rootMargin="60%">
                   Front end dev
                 </AnimatedText>
-              </h1>
+              </h1> */}
               <span className="profile-role-tagline">
                 Building applications in Front-End and Back-End
               </span>
