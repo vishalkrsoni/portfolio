@@ -133,11 +133,12 @@ button .load img {
 }
 .col i {
   padding: 7px;
-  color: rgb(137 132 228);
-  color: rgb(87 164 215 / 84%);
+  
+  color: rgba(74, 174, 240, 0.84);
 }
 .col i:hover {
   transform: scale(1.5);
+  color: rgba(222, 204, 245, 0.876);
 }
 
 @media screen and (min-width: 940px) {

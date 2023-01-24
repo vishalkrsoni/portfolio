@@ -12,13 +12,13 @@ import vivek from "../../../src/img/Testimonial/vivek.png";
 import urvish from "../../../src/img/Testimonial/urvish.png";
 import jangid from "../../../src/img/Testimonial/jangid.png";
 import ankit from "../../../src/img/Testimonial/ankitAg.png";
-import prem from "../../../src/img/Testimonial/prem.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+// import prem from "../../../src/img/Testimonial/prem.png";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faFacebook,
+//   faInstagram,
+//   faLinkedin,
+// } from "@fortawesome/free-brands-svg-icons";
 
 import shape from "../../../src/img/Testimonial/shape-bg.png";
 
