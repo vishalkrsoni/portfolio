@@ -3,7 +3,7 @@ import Typical from "react-typical";
 import axios from "axios";
 import { toast } from "react-toastify";
 
-import imgBack from "../../../src/images/mailz.jpeg";
+import imgBack from "../../../src/images/mailz2.jpeg";
 import load1 from "../../../src/images/load2.gif";
 import ScreenHeading from "../../utilities/ScreenHeading/ScreenHeading";
 import ScrollService from "../../utilities/ScrollService";
@@ -34,7 +34,7 @@ export default function ContactMe(props) {
   const handleMessage = (e) => {
     setMessage(e.target.value);
   };
-  console.log(name);
+  console.log(name,email,message);
   const submitForm = async (e) => {
     e.preventDefault();
     try {
@@ -44,6 +44,7 @@ export default function ContactMe(props) {
         message,
       };
       setBool(true);
+
       const res = await axios.post(`/contact`, data);
       if (name.length === 0 || email.length === 0 || message.length === 0) {
         setBanner(res.data.msg);
@@ -69,22 +70,22 @@ export default function ContactMe(props) {
       <div className="central-form">
         <div className="col">
           <h2 className="title">
-            <Typical loop={Infinity} steps={["Get In Touch 📧", 1000]} />
+           Get In Touch 📧
           </h2>{" "}
-          <a href="https://web.facebook.com/?_rdc=1&_rdr">
+          <a href="https://www.facebook.com/vishalkrsoni">
             <i className="fa fa-facebook-square" />
           </a>
-          <a href="#">
+          <a href="https://myaccount.google.com/profile">
             <i className="fa fa-google-plus-square" />
           </a>
-          <a href="https://www.instagram.com/instructor_ehizeex/">
+          <a href="https://www.instagram.com/vishalkrsoni/">
             <i className="fa fa-instagram" />
           </a>
-          <a href="https://www.youtube.com/channel/UCSSr5ZDFbilpZ592_ycoAwA">
-            <i className="fa fa-youtube-square" />
+          <a href="https://github.com/vishalkrsoni">
+            <i className="fa fa-github"></i>
           </a>
-          <a href="https://twitter.com/Ehiedu_baba">
-            <i className="fa fa-twitter" />
+          <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+            <i className="fa fa-linkedin-square"></i>
           </a>
         </div>
         <div className="back-form">

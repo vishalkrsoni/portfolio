@@ -65,26 +65,40 @@ const Resume = (props) => {
   const projectsDetails = [
     {
       title: "Personal Portfolio Website",
-      duration: { fromDate: "2020", toDate: "2021" },
+      duration: { fromDate: "June'22", toDate: "July'22" },
       description:
         "A Personal Portfolio website to showcase all my details and projects at one place.",
-      subHeading: "Technologies Used: React JS, Bootsrap",
+      subHeading: "Technologies Used: ReactJs, Bootsrap, NodeJs, ExpressJs ",
     },
     {
-      title: "Mobile E-shop ",
-      duration: { fromDate: "2020", toDate: "2021" },
+      title: "Talkies",
+      duration: { fromDate: "Sept'22", toDate: "Nov'22" },
       description:
-        "An ecommerce application designed to sell products online wth payment system integration",
-      subHeading:
-        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux.",
+        "A movie platform which can handle a load of 10000 users. Where users can watch their favourite movies and Web-Series. I've also implemented subscription model and Stripe payment module",
+      subHeading: "Technologies Used: FireBase, ReactJs, NodeJs, ExpressJs, Stripe",
     },
     {
-      title: "Ecommerce Website ",
+      title: "Easy-Buy",
       duration: { fromDate: "2020", toDate: "2021" },
       description:
-        "Online ecommerce website for showcasing and selling products onlne with payment system integration, both Paypal and Stripe",
+        "An ecommerce application designed to sell products online wth payment system integration place.",
+      subHeading: "Technologies Used: React JS, Redux, ExpressJs, NodeJs",
+    },
+    {
+      title: "Be-In-Touch",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description:
+        "A real-time chatting application which provides us calling feature as well.",
       subHeading:
-        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Bootstrap.",
+        "Technologies Used:  React Native, Mongo DB, Express Js, Node Js, Redux,SocketIo",
+    },
+    {
+      title: "My-Moments ",
+      duration: { fromDate: "2020", toDate: "2021" },
+      description:
+        "An application which allows users to share theirs momeries by sharing their memories in terms of Images and GeoLocation",
+      subHeading:
+        "Technologies Used: Mongo DB, Epress Js, React Js, Node JS, Redux, Google-Geo-Location",
     },
   ];
 
@@ -112,27 +126,91 @@ const Resume = (props) => {
     </div>,
 
     /* WORK EXPERIENCE */
-    <div className="resume-screen-container" key="work-experience">
+    <div
+      className="resume-screen-container work-experience-container"
+      key="work-experience">
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"IndoAlpine Labs"}
+          subHeading={"Operations Head"}
+          fromDate={"Jan'18"}
+          toDate={"June'19"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            Worked on operations and marketing and the strategies.
+          </span>
+        </div>
+
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Managed front desk operations and customer interactions.
+            Evaluated workflow and productivity by making changes where
+            necessary.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Identified and resolved unauthorized, unsafe or ineffective
+            practices, requirements and challenges of our business.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            -Arranged necessary meetings with the suppliers and smoothly cracked
+            the deal.{" "}
+          </span>
+          <br />
+        </div>
+      </div>
+
+      <div className="experience-container">
+        <ResumeHeading
+          heading={"PrepLeaf"}
+          subHeading={"Software Intern"}
+          fromDate={"July'19"}
+          toDate={"Mar'20"}
+        />
+        <div className="experience-description">
+          <span className="resume-description-text">
+            Worked on Operations, database and UI design.
+          </span>
+        </div>
+        <div className="experience-description">
+          <span className="resume-description-text">
+            - Used ReactJs , Redux for app and state management.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            - Implemented and updated PrepSeed application module.
+          </span>
+          <br />
+          <span className="resume-description-text">
+            -Carried out day-by-day duties accurately and efficiently.{" "}
+          </span>
+          <br />
+        </div>
+      </div>
+
       <div className="experience-container">
         <ResumeHeading
           heading={"FlipTree Technologies"}
           subHeading={"SERVER DEVELOPER"}
-          fromDate={"02/2022"}
-          toDate={"7/2022"}
+          fromDate={"Feb'22"}
+          toDate={"June'22"}
         />
         <div className="experience-description">
           <span className="resume-description-text">
-            Currently working as MERN stack web developer.
+            Worked as a server developer using Java and NodeJs.
           </span>
         </div>
         <div className="experience-description">
           <span className="resume-description-text">
             - Effectively coded software changes and alterations based on
-            specificdesign specifications.
+            specific design specifications for FlipTree app.
           </span>
           <br />
           <span className="resume-description-text">
-            - Implemented and updated application modules.
+            - Implemented the API's required for our Lumi matrimony app, after
+            learning JavaScript and NodeJs technologies.
           </span>
           <br />
           <span className="resume-description-text">
@@ -162,9 +240,9 @@ const Resume = (props) => {
     </div>,
 
     /* PROJECTS */
-    <div className="resume-screen-container" key="projects">
+    <div className="resume-screen-container projects-container" key="projects">
       {projectsDetails.map((projectsDetails, index) => (
-        <ResumeHeading
+        <ResumeHeading className='project-data'
           key={index}
           heading={projectsDetails.title}
           subHeading={projectsDetails.subHeading}
@@ -249,7 +327,6 @@ const Resume = (props) => {
               <div className="bullets">{getBullets()}</div>
             </div>
           </div>
-
           <div className="resume-bullet-details">{getResumeScreens()}</div>
         </div>
       </div>

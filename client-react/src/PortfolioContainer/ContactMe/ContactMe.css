@@ -4,7 +4,10 @@
 
   margin: 100px 0 0 0;
 }
-
+.fa {
+  font-size: 22px;
+  padding: 2px;
+}
 .central-form {
   max-width: 1100px;
   padding: 10px;
@@ -18,7 +21,7 @@
 }
 
 .central-form h2 {
-  color: #fff;
+  color: rgb(236, 238, 233);
   font-family: "Poppins Bold";
   letter-spacing: 0.2rem;
   margin-bottom: 20px;
@@ -49,7 +52,7 @@
 
 .central-form form {
   width: auto;
-  box-shadow: 0 0 2px 1px white;
+  box-shadow: 0 0 2px 1px rgb(229, 184, 184);
   display: flex;
   color: #111;
   padding: 15px;
@@ -130,7 +133,8 @@ button .load img {
 }
 .col i {
   padding: 7px;
-  color: #fff;
+  color: rgb(137 132 228);
+  color: rgb(87 164 215 / 84%);
 }
 .col i:hover {
   transform: scale(1.5);

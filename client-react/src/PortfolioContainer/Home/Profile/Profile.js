@@ -11,7 +11,7 @@ const Profile = () => {
           <div className="colz">
             <div className="colz-icon">
               <a href="https://www.facebook.com/vishalkrsoni">
-                <i className="fa fa-facebook-square"></i>
+                <i className="fa fa-facebook-square" ></i>
               </a>
               <a href="https://myaccount.google.com/profile">
                 <i className="fa fa-google-plus-square"></i>
@@ -23,7 +23,7 @@ const Profile = () => {
                 <i className="fa fa-github"></i>
               </a>
               <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
-                <i className="fa fa-linkedin-square"></i>
+                <i className="fa fa-linkedin-square" ></i>
               </a>
             </div>
           </div>

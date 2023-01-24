@@ -13,6 +13,12 @@ import urvish from "../../../src/img/Testimonial/urvish.png";
 import jangid from "../../../src/img/Testimonial/jangid.png";
 import ankit from "../../../src/img/Testimonial/ankitAg.png";
 import prem from "../../../src/img/Testimonial/prem.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebook,
+  faInstagram,
+  faLinkedin,
+} from "@fortawesome/free-brands-svg-icons";
 
 import shape from "../../../src/img/Testimonial/shape-bg.png";
 
@@ -33,7 +39,9 @@ export default function Testimonial(props) {
     animateOut: "bounceOutRight",
     dots: true,
     autoplay: true,
-    smartSpeed: 1000,
+    smartSpeed: 2000,
+    URLhashListener:true,
+    startPosition: 'URLHash',
     responsive: {
       0: {
         items: 1,
@@ -67,14 +75,14 @@ export default function Testimonial(props) {
                     <p>
                       <i className="fa fa-quote-left" />
                       I have worked neck-to-neck with Vishal and build a
-                      self-sustainable ecosystem for our FMCG Start-Up. The
-                      recommendations coming out of Vishal’s four-week study
-                      have allowed us to focus on problem areas and execute
-                      real-time changes, which immediately improved the
-                      effectiveness of our distribution processes and
-                      procedures. He has also gained extensive experience with
-                      operations management, workflow management, and service
-                      level management.
+                      self-sustainable ecosystem for our FMCG Start-Up. He is a
+                      gem of a person. The recommendations coming out of
+                      Vishal’s four-week study have allowed us to focus on
+                      problem areas and execute real-time changes, which
+                      immediately improved the effectiveness of our distribution
+                      processes and procedures. He has also gained extensive
+                      experience with operations management, workflow
+                      management, and service level management.
                       <i className="fa fa-quote-right" />
                     </p>
                     <ul className="stars list-unstyled">
@@ -101,7 +109,48 @@ export default function Testimonial(props) {
                       src={abhishekBhaiya}
                       alt="no internet connection"></img>
                     <h5>Abhishek Anand </h5>
-                    <p>Founder IndoAlpine,Moovo.in </p>
+                    <p>
+                      Founder <small> IndoAlpine</small>
+                    </p>
+
+                    {/* <div className="testimonial-icon">
+                      <a
+                        href="https://www.facebook.com/learnbuildteach/"
+                        className="facebook social">
+                        <FontAwesomeIcon className="social-logo" icon={faFacebook}  />
+                      </a>
+                      <a
+                        href="https://www.twitter.com/jamesqquick"
+                        className="twitter social">
+                        <FontAwesomeIcon className="social-logo" icon={faInstagram}  />
+                      </a>
+                      <a
+                        href="https://www.instagram.com/learnbuildteach"
+                        className="instagram social">
+                        <FontAwesomeIcon className="social-logo" icon={faLinkedin}  />
+                      </a>
+                    </div> */}
+                      <div className="testimonial-icon">
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-linkedin-square"
+                          style={{
+                            color: "rgba(10,102,194)",
+                            background:'white'
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-instagram"
+                          style={{
+                            color: "#f55317fc",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i className="fa fa-facebook-square"></i>
+                      </a>
+                    </div>
+
                   </div>
                 </div>
               </div>
@@ -144,13 +193,34 @@ export default function Testimonial(props) {
                   <div className="client-info">
                     <img src={urvish} alt="no internet connection"></img>
                     <h5>Urvish Patel</h5>
-                    <p>CTO FlipTree</p>
+                    <p>
+                      CTO <small>FlipTree</small>{" "}
+                    </p>
+                    <div className="testimonial-icon">
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-linkedin-square"
+                          style={{
+                            color: "rgba(10,102,194)",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-instagram"
+                          style={{
+                            color: "#f55317fc",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i className="fa fa-facebook-square"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
-                   {/* Ankit Agarawal */}
-                   <div className="col-lg-12">
+              {/* Ankit Agarawal */}
+              <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
                     <p>
@@ -188,11 +258,102 @@ export default function Testimonial(props) {
                   <div className="client-info">
                     <img src={ankit} alt="no internet connection"></img>
                     <h5>Ankit Agarawal</h5>
-                    <p>CEO PrepLeaf</p>
+                    <p>
+                      CEO <small>PrepLeaf</small>
+                    </p>
+                    <div className="testimonial-icon">
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-linkedin-square"
+                          style={{
+                            color: "rgba(10,102,194)",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-instagram"
+                          style={{
+                            color: "#f55317fc",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i className="fa fa-facebook-square"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
+              {/* Hitesh Jangid */}
+              <div className="col-lg-12">
+                <div className="testi-item">
+                  <div className="testi-comment">
+                    <p>
+                      <i className="fa fa-quote-left" />
+                      I have worked with Vishal during PrepLeaf development
+                      phase. From the start of the project, through to
+                      completion,he supported us and exceeded our expectations
+                      in every way. Not only was our experience personal and
+                      friendly, his ability to identify and present our key
+                      messages in an imaginative and creative way gave us a huge
+                      amount of confidence in him. In many ways Vishal
+                      understood our websites needs better than we did and he
+                      complimented our vision perfectly. He's reliable,
+                      professional and easy to work with.
+                      <i className="fa fa-quote-right" />
+                    </p>
+                    <ul className="stars list-unstyled">
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half-alt" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half-alt" />
+                      </li>
+                      <li>
+                        <i className="fa fa-star-half" />
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="client-info">
+                    <img src={jangid} alt="no internet connection"></img>
+                    <h5>Hitesh Jangid </h5>
+                    <p>
+                      CTO <small>PrepLeaf</small>
+                    </p>
+                    <div className="testimonial-icon">
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-linkedin-square"
+                          style={{
+                            color: "rgba(10,102,194)",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-instagram"
+                          style={{
+                            color: "#f55317fc",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i className="fa fa-facebook-square"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
               {/* Vivek Regmi */}
               <div className="col-lg-12">
@@ -232,49 +393,35 @@ export default function Testimonial(props) {
                   <div className="client-info">
                     <img src={vivek} alt="no internet connection"></img>
                     <h5>Vivek Regmi</h5>
-                    <p>CEO MentorYard</p>
-                  </div>
-                </div>
-              </div>
-
-         
-              {/* Hitesh Jangid */}
-              <div className="col-lg-12">
-                <div className="testi-item">
-                  <div className="testi-comment">
                     <p>
-                      <i className="fa fa-quote-left" />
-                      I have worked with Vishal 
-                      <i className="fa fa-quote-right" />
+                      Founder <small>MentorYard</small>
                     </p>
-                    <ul className="stars list-unstyled">
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star-half-alt" />
-                      </li>
-                      <li>
-                        <i className="fa fa-star" />
-                      </li>
-                    </ul>
-                  </div>
-                  <div className="client-info">
-                    <img src={jangid} alt="no internet connection"></img>
-                    <h5>Hitesh Jangid </h5>
-                    <p>CTO,Founder PrepLeaf</p>
+                    <div className="testimonial-icon">
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-linkedin-square"
+                          style={{
+                            color: "rgba(10,102,194)",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i
+                          className="fa fa-instagram social-logo"
+                          style={{
+                            color: "#f55317fc",
+                          }}></i>
+                      </a>
+                      <a href="https://www.linkedin.com/in/vishal-soni-a8ab14a9/">
+                        <i className="fa fa-facebook-square"></i>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
 
               {/* Prem Arjun */}
-              <div className="col-lg-12">
+
+              {/* <div className="col-lg-12">
                 <div className="testi-item">
                   <div className="testi-comment">
                     <p>
@@ -308,7 +455,7 @@ export default function Testimonial(props) {
                     <p>Sr. BA, GROWW</p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </OwlCarousel>
           </div>
         </div>

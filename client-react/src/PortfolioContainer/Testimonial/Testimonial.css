@@ -6,6 +6,13 @@
   position: relative;
   z-index: -1;
 }
+.social{
+  padding: 6px;
+  font-size: 64px;
+}
+.social-logo{
+  font-size: 44px;
+}
 .testimonial-section::before {
   content: "";
   position: absolute;
@@ -82,13 +89,38 @@
 }
 .testimonial-section .client-info h5 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 1000;
   line-height: 26px;
   margin: 0 0 2px;
+}
+.testimonial-icon i {
+  color: rgba(17, 40, 219, 0.88);
+  padding: 5px;
+  font-size: 24px;
+}
+.social-logo:hover{
+  color: aqua;
+}
+
+.testimonial-icon i:hover {
+  color: white;
+  transform: scale(1.4);
 }
 .testimonial-section .client-info p {
   font-size: 16px;
   line-height: 26px;
-  font-weight: 400;
+  font-weight: 570;
   margin: 0;
 }
+.testimonial-section .client-info p small {
+  font-size: 12px;
+  line-height: 26px;
+  font-weight: 500;
+  margin: 0;
+  margin-left: 10px;
+}
+/* 
+.testimonial-section .testi-item .testimonial-icon a {
+  margin-right: 5px;
+  color: tomato;
+} */

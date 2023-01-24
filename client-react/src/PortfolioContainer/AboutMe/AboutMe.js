@@ -6,7 +6,7 @@ import './AboutMe.css'
 
 const AboutMe = (props) => {
   let fadeInScreenHandler = (screen) => {
-    if (screen.fadeScreen !== props.id) return;
+    if (screen.fadeInScreen !== props.id) return;
     Animations.animations.fadeInScreen(props.id);
   };
   const fadeInSubscription =
@@ -20,7 +20,7 @@ const AboutMe = (props) => {
           "Full Stack web development",
           "Interactive Front End as per the design",
           "MERN Stack development",
-          "Redux for State Mnanagement",
+          "Redux for State Management",
           "Building REST API using NodeJs",
           "Managing databases ( SQL and No-SQL)",
           "Building REST API using SpringBoot",
@@ -41,8 +41,8 @@ const AboutMe = (props) => {
     };
   
     return (
-      <div className="about-me-container screen-container" id={props.id || ""}>
-        <div className="about-me-parent">
+      <div className="about-me-container screen-container " id={props.id || ""}>
+        <div className="about-me-parent ">
           <ScreenHeading title={"About Me"} subHeading={"Why Choose Me?"} />
           <div className="about-me-card">
             <div className="about-me-profile"></div>
